@@ -26,15 +26,15 @@ const Banner = () => {
       <div className="w-full bg-red-800 z-0 md:w-2xl md:rounded-tl-full  md:z-20 relative">
         <div className="md:pt-0 z-0 md:px-0 md:z-20  ">
           <Lottie className="w-sm flex md:w-full" animationData={bannerLottie} loop={true} autoplay={true} />
-          <div className="absolute top-54 right-50 md:top-96 lg:top-120 z-10  md:right-90 animate animate-float">
+          <div className="absolute top-70 right-70 md:top-96 lg:top-120 z-10  md:right-70 animate animate-float">
             <Comment
               icon={
-                <FaCheck className="text-white p-1 bg-green-500 rounded-full" />
+                <FaCheck className="text-white p-1  bg-green-500 rounded-full" />
               }
               heading={"Delivery Complete"}
             />
           </div>
-          <div className="absolute top-40 left-0  md:top-50 md:right-10 animate-float">
+          <div className="absolute top-30 left-10  md:top-30 md:left-60 animate-float">
             <Comment
               icon={
                 <RiTimerFlashLine className="text-white p-1  bg-green-500 rounded-full text-xl md:text-4xl" />
@@ -42,11 +42,11 @@ const Banner = () => {
               heading={"Delivery 30 Min"}
             />
           </div>
-          <div className="absolute flex top-10 right-10 md:top-140">
-            <div className=" w-32 md:w-56  z-10 rotate-[20deg] top-90 ">
+          <div className=" flex top-10 right-10 md:top-140">
+            <div className=" absolute w-32 md:w-56  z-10 rotate-[20deg] top-12 sm:top-24 right-50 md:top-110">
               <Lottie animationData={arrowLottie} loop={true} autoplay={true} />
             </div>
-            <div className="w-l md:w-xs ">
+            <div className="absolute top-12 sm:top-30 right-5  w-l md:top-120 md:right-10  md:w-xs ">
               <BannerCard></BannerCard>
             </div>
           </div>
